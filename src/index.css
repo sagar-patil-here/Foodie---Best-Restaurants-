@@ -75,3 +75,28 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.button-modern {
+  padding: 0.50rem 0.7rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: #F5F5DC;
+  color: #1A2E1A;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 12px 0 rgba(26,46,26,0.04);
+  letter-spacing: 0.03em;
+  transition: all 0.18s cubic-bezier(.4,0,.2,1);
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+}
+.button-modern:hover, .button-modern:focus {
+  background: #1A2E1A;
+  color: #F5F5DC;
+  border-color: #7BAE4B;
+  box-shadow: 0 4px 24px 0 rgba(123,174,75,0.10);
+}
+.button-modern:active {
+  transform: scale(0.97);
+}
