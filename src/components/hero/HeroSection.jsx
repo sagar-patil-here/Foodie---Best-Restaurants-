@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import plate1 from '../../assets/plate 1.png';
 import plate2 from '../../assets/plate 2.png';
 import plate3d from '../../assets/3D Multi-Cuisine Plate.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function HeroSection({ heroTextVisible }) {
   const leftInfoRef = useRef();
@@ -10,6 +11,7 @@ export default function HeroSection({ heroTextVisible }) {
   const lines = ["Best Food", "in Town"];
   const words = lines.map(line => line.split(" "));
   const wordRefs = useRef([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (!heroTextVisible) return;
@@ -53,7 +55,7 @@ export default function HeroSection({ heroTextVisible }) {
           <h3 className="font-heading text-lg mt-2 mb-1">Premium Places</h3>
           <p className="text-sm text-cream text-right font-body">Premium quality, At Your Doorstep.</p>
           <span className="text-lg mt-2 font-heading">lets goo</span>
-          <button className="mt-2 px-5 py-2 bg-lime-400 text-primary rounded-full font-bold text-base shadow hover:bg-lime-500 transition font-heading">
+          <button  className="mt-2 px-5 py-2 bg-lime-400 text-primary rounded-full font-bold text-base shadow hover:bg-lime-500 transition font-heading" onClick={() => navigate('/nearby')}>
             Explore NearBy <span className="ml-1">👉</span>
           </button>
         </div>
