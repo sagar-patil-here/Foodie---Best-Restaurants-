@@ -19,7 +19,7 @@ export default {
         syne: ['Syne', 'sans-serif'],
       },
       animation: {
-        spinSlow: 'spin 5s linear infinite', // custom slow spin
+        spinSlow: 'spin 100s linear infinite', // custom slow spin
       },
     },
   },

@@ -5,12 +5,20 @@ import plate2 from '../../assets/plate 2.png';
 import plate3d from '../../assets/3D Multi-Cuisine Plate.png';
 
 export default function HeroSection() {
-  const titleRef = useRef();
   const leftInfoRef = useRef();
   const rightInfoRef = useRef();
+  const lines = ["Best Food", "in Town"];
+  const words = lines.map(line => line.split(" "));
+  const wordRefs = useRef([]);
 
   useEffect(() => {
-    gsap.fromTo(titleRef.current, { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power3.out' });
+    // Animate each word's inner span from translateY(100%) to 0
+    const allWordRefs = wordRefs.current.flat();
+    gsap.fromTo(
+      allWordRefs,
+      { y: '100%' },
+      { y: '0%', duration: 1, ease: 'power3.out', stagger: 0.09 }
+    );
     gsap.fromTo(leftInfoRef.current, { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 1, delay: 0.3, ease: 'power3.out' });
     gsap.fromTo(rightInfoRef.current, { x: 40, opacity: 0 }, { x: 0, opacity: 1, duration: 1, delay: 0.3, ease: 'power3.out' });
   }, []);
@@ -42,7 +50,26 @@ export default function HeroSection() {
       </div>
       {/* Center Main Title and Plate Image */}
       <div className="flex flex-col items-center justify-center z-10">
-        <h1 ref={titleRef} className="font-syne text-[3rem] md:text-[5rem] text-white font-bold text-center leading-tight mb-6 mt-96" style={{letterSpacing:'-0.03em'}}>Best Food<br />in Town</h1>
+        <h1 className="font-syne text-[6rem] md:text-[5rem] text-white font-bold text-center leading-tight mb-6 mt-96" style={{letterSpacing:'-0.03em'}}>
+          {words.map((lineWords, lineIdx) => (
+            <div key={lineIdx} className="flex justify-center overflow-hidden h-[1.2em] md:h-[1.3em] w-full mb-2">
+              {lineWords.map((word, wordIdx) => (
+                <span key={wordIdx} className="overflow-hidden inline-block mx-2">
+                  <span
+                    ref={el => {
+                      if (!wordRefs.current[lineIdx]) wordRefs.current[lineIdx] = [];
+                      wordRefs.current[lineIdx][wordIdx] = el;
+                    }}
+                    className="block"
+                    style={{ display: 'block' }}
+                  >
+                    {word}
+                  </span>
+                </span>
+              ))}
+            </div>
+          ))}
+        </h1>
         <div className="relative flex items-center justify-center mt-2">
           <img src={plate3d} alt="3D Multi Cuisine Plate" className="w-[53rem] h-[53rem] rounded-full shadow-2xl object-contain bg-cream animate-spinSlow" />
         </div>
