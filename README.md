@@ -2,7 +2,7 @@
 
 A modern, AI-powered food recommendation platform that helps you discover the best local restaurants and cuisines in your area.
 
-![FOODIE Hero Section](src/assets/3D%20Multi-Cuisine%20Plate.png)
+![FOODIE Hero Section](src/assets/hero.png)
 
 ## ✨ Features
 
