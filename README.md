@@ -1,12 +1,94 @@
-# React + Vite
+# 🍽️ FOODIE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, AI-powered food recommendation platform that helps you discover the best local restaurants and cuisines in your area.
 
-Currently, two official plugins are available:
+![FOODIE Hero Section](src/assets/3D%20Multi-Cuisine%20Plate.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🏆 **Premium Places**: Discover high-quality restaurants and food establishments
+- 📍 **Nearby Exploration**: Find the best food spots in your vicinity
+- 🎨 **Modern UI**: Beautiful and intuitive user interface with smooth animations
+- 🌐 **Responsive Design**: Seamless experience across all devices
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Tech Stack
+
+- React.js
+- GSAP (GreenSock Animation Platform)
+- Tailwind CSS
+- React Router
+- Modern JavaScript (ES6+)
+
+## 🛠️ Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/foodie.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd foodie
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Start the development server:
+```bash
+npm run dev
+```
+
+## 🎯 Key Features
+
+### AI-Powered Recommendations
+- Location-based food suggestions
+- Personalized recommendations
+- Smart filtering system
+
+### Premium Places
+- Curated list of high-quality restaurants
+- Detailed restaurant information
+- User reviews and ratings
+
+### Nearby Exploration
+- Real-time location tracking
+- Distance-based sorting
+- Interactive map integration
+
+## 🎨 UI/UX Highlights
+
+- Smooth animations and transitions
+- Modern gradient backgrounds
+- Responsive design for all screen sizes
+- Interactive elements with hover effects
+- Beautiful typography using custom fonts
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Authors
+
+- Your Name - Initial work
+
+## 🙏 Acknowledgments
+
+- Thanks to all contributors who have helped shape this project
+- Special thanks to the GSAP team for the amazing animation library
+- Inspired by the love for food and technology
+
+---
+

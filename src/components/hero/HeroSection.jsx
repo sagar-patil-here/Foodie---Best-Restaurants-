@@ -20,10 +20,10 @@ export default function HeroSection({ heroTextVisible }) {
     gsap.fromTo(
       allWordRefs,
       { y: '100%' },
-      { y: '0%', duration: 0.8, ease: 'power3.out', stagger: 0.09 }
+      { y: '0%', duration: 0.4, ease: 'power2.out', stagger: 0.04 }
     );
-    gsap.fromTo(leftInfoRef.current, { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 1, delay: 0.1, ease: 'power3.out' });
-    gsap.fromTo(rightInfoRef.current, { x: 40, opacity: 0 }, { x: 0, opacity: 1, duration: 1, delay: 0.1, ease: 'power3.out' });
+    gsap.fromTo(leftInfoRef.current, { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: 'power2.out' });
+    gsap.fromTo(rightInfoRef.current, { x: 40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: 'power2.out' });
   }, [heroTextVisible]);
 
   return (
