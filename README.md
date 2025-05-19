@@ -41,23 +41,6 @@ npm install
 npm run dev
 ```
 
-## 🎯 Key Features
-
-### AI-Powered Recommendations
-- Location-based food suggestions
-- Personalized recommendations
-- Smart filtering system
-
-### Premium Places
-- Curated list of high-quality restaurants
-- Detailed restaurant information
-- User reviews and ratings
-
-### Nearby Exploration
-- Real-time location tracking
-- Distance-based sorting
-- Interactive map integration
-
 ## 🎨 UI/UX Highlights
 
 - Smooth animations and transitions
@@ -75,20 +58,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- Your Name - Initial work
-
-## 🙏 Acknowledgments
-
-- Thanks to all contributors who have helped shape this project
-- Special thanks to the GSAP team for the amazing animation library
-- Inspired by the love for food and technology
-
----
 
